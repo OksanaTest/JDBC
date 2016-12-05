@@ -22,6 +22,7 @@ class MyDriver {
             statement = connection.createStatement();
         }catch (SQLException e){
             System.out.println(e);}
+        System.out.println(statement);
         return statement;
     }
     static ResultSet createResultSetForSelect(String SQL) throws SQLException{

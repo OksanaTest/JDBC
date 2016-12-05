@@ -20,9 +20,7 @@ public class SQLExecuter {
             System.out.println(e);
         }finally {
             try {
-                if((MyDriver.createConnection() != null)&
-                        (MyDriver.createConnection().getConnection()) != null){
-                MyDriver.closeConnection();}
+                MyDriver.closeConnection();
             } catch (SQLException e) {
                 System.out.println(e);
             }
