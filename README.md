@@ -20,7 +20,7 @@ go to IDEA, Project Setting Ctr+Alt+Shift+S,choose Modules from Project Settings
 go to Dependencies tab, click "Add JARs or Directories" mark and choose the .jar, click "Ok" button);
 5)Run "Runner" class to be able execute you SQL queries.
 
-*SQL to create necessary tables:
+*SQL queries to create necessary tables:
 CREATE TABLE IF NOT EXISTS developers (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	dev_name VARCHAR(25) NOT NULL,
