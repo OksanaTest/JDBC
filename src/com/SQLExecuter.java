@@ -28,8 +28,8 @@ public class SQLExecuter {
     }
     static void updateAndInsert(String SQL){;
             try{
-                if((MyDriver.createForUpdate(SQL)== 0) || (MyDriver.createForUpdate(SQL)== 1)){;
-                System.out.println("QUERY: OK");}
+                MyDriver.createForUpdate(SQL);
+                System.out.println("QUERY: OK");
             }catch (SQLException e){
                 System.out.println(e);
             }finally {
