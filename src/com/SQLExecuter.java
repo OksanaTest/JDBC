@@ -21,8 +21,8 @@ public class SQLExecuter {
         }finally {
             try {
                 if((MyDriver.createConnection() != null)&
-                        (MyDriver.createConnection().getConnection()) != null);
-                MyDriver.closeConnection();
+                        (MyDriver.createConnection().getConnection()) != null){
+                MyDriver.closeConnection();}
             } catch (SQLException e) {
                 System.out.println(e);
             }
@@ -30,8 +30,8 @@ public class SQLExecuter {
     }
     static void updateAndInsert(String SQL){;
             try{
-                if((MyDriver.createForUpdate(SQL)== 0) || (MyDriver.createForUpdate(SQL)== 1) );
-                System.out.println("QUERY: OK");
+                if((MyDriver.createForUpdate(SQL)== 0) || (MyDriver.createForUpdate(SQL)== 1)){;
+                System.out.println("QUERY: OK");}
             }catch (SQLException e){
                 System.out.println(e);
             }finally {
