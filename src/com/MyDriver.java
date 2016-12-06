@@ -13,26 +13,13 @@ class MyDriver {
             System.out.println(e);
         }
     }
-    static Statement createConnection(){
+    static Connection createConnection(){
         Connection connection = null;
-        Statement statement = null;
         try {
-            MyDriver.LoadDriver();
+            LoadDriver();
             connection = DriverManager.getConnection(DATABASE_URL + USER + PASSWORD);
-            statement = connection.createStatement();
         }catch (SQLException e){
             System.out.println(e);}
-        return statement;
-    }
-    static ResultSet createResultSetForSelect(String SQL) throws SQLException{
-            return createConnection().executeQuery(SQL);
-    }
-    static int createForUpdate(String SQL) throws SQLException{
-        return createConnection().executeUpdate(SQL);
-
-    }
-    static void closeConnection() throws SQLException{
-        createConnection().getConnection().close();
-        createConnection().close();
+        return connection;
     }
 }

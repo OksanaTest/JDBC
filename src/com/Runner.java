@@ -40,7 +40,6 @@ public class Runner {
         Scanner scanner = new Scanner(System.in);
         String SQL = scanner.nextLine();
         SQLExecuter.select(SQL);
-
     }
 }
 
