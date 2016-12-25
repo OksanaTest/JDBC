@@ -18,7 +18,7 @@ e.g from here https://dev.mysql.com/downloads/connector/j/5.0.html;
 (IDEA sometime ignored CLASSPATH as environment variable, so you can add directly .jar to the project:
 go to IDEA, Project Setting Ctr+Alt+Shift+S,choose Modules from Project Settings,
 go to Dependencies tab, click "Add JARs or Directories" mark and choose the .jar, click "Ok" button);
-5)Run "Runner" class to be able execute you SQL queries.
+5)Run "Runner" class to be able execute your SQL queries.
 
 *SQL queries to create necessary tables:
 CREATE TABLE IF NOT EXISTS developers (
